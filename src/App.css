@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); */
+
+.App {
+  font-family: "Anonymous Pro"
+}
+
+.nav-links {
+  color: black;
+}
+
+.project-container {
+  background-color: white;
+}
+
+.project { 
+  width: 40%;
+  height: 150px;
+  margin: 15px;
+  border: 2px solid black;
+  box-shadow: 5px 5px black;
+  font-size: 12px;
+}
