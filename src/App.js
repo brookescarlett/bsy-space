@@ -31,7 +31,8 @@ class App extends Component {
       <div className="flex">
         <div><Nav renderProjects={this.renderProjects}/></div>
         <div>
-        { this.state.projects ? <ProjectContainer toggleProject={this.toggleProject}/> : <Bio /> }
+        < Bio />
+        { this.state.projects ? <ProjectContainer toggleProject={this.toggleProject}/> : null }
         </div>
     </div>
     <div className="fixed bottom-0 mb2">

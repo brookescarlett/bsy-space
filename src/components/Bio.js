@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Bio extends Component {
     render() { 
         return (
-            <div className="ml2">
+            <div className="ml2 bio">
                 <p className="ml1">Brooke is a web developer and digital designer based in Brooklyn.</p>
 
                 <p className="ml1">She's passionate about bringing products to life on the Internet, and telling compelling brand stories through clean graphic design and dynamic React apps.</p>

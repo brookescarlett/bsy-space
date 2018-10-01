@@ -12,7 +12,7 @@ class ProjectContainer extends Component {
                     <p className="h2 head-text">Projects</p>
                     <p className="h2 head-text fixed right-0 mr4 close" onClick={this.props.toggleProject}>X</p>
                 </div>
-                <div className="projects-list flex flex-wrap my0">
+                <div className="projects-list flex flex-wrap my0 items-center justify-center">
                     { arr.map(el => <Project datum={el} />) }
                 </div>
             </div>
