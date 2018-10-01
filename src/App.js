@@ -24,12 +24,12 @@ class App extends Component {
 
   render() {
     return (
-    <div className="App m4">
+    <div className="App mx4 my3">
       <div className="flex justify-center items-center">
-        <p className="h2">Brooke Scarlett Yalof</p>
+        <p className="head-text h2">Brooke Scarlett Yalof</p>
       </div>
       <div className="flex">
-        <Nav renderProjects={this.renderProjects}/>
+        <div><Nav renderProjects={this.renderProjects}/></div>
         <div>
         { this.state.projects ? <ProjectContainer toggleProject={this.toggleProject}/> : <Bio /> }
         </div>
