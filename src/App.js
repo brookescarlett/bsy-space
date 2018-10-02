@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav'
 import Bio from './components/Bio'
@@ -36,7 +35,7 @@ class App extends Component {
         </div>
     </div>
     <div className="fixed bottom-0 mb2">
-      😏 Brooke Scarlett 
+        <span role="img" aria-label="wink">😏</span> Brooke Scarlett 
     </div>
   </div>
     );

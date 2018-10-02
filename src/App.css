@@ -4,6 +4,24 @@
   font-family: "Anonymous Pro"
 }
 
+/* Loader */
+.yin {
+  font-family: "Arial Black";
+  font-size: 36px;
+  margin: 0px;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  line-height: 75%; 
+  animation: change-line-space 3s ease-in-out;
+}
+
+.yang {
+  color: black !important;
+  line-height: 75%; 
+}
+
+
+
 /* Head */
 .head-text {
   -webkit-text-stroke: 1px black;
@@ -11,74 +29,79 @@
   font-size: 40px;
   transition: all 0.6s ease-in-out;
   opacity: 0;
-  animation-delay: 10s;
-  animation: fadein 10s;
+  animation-delay: 6s;
+  animation: fadein 6s;
   animation-fill-mode: forwards;
-
 }
 
-.head-text:hover {
+.head-text:hover, .project-text:hover {
   color: black;
   -webkit-text-stroke: 1px black;
   font-size: 48px;
   transition: all 0.6s ease-in-out;
 }
 
+/* end header */
+
 /* Navbar */
 .nav-links {
   color: black;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-links:hover {
   font-size: 1.3rem;
-  transform:rotate(10deg);
-  transition: all 0.6s ease-in-out;
+  transform: rotate(10deg);
+  transition: all 0.2s ease-in-out;
 }
 
 .projs {
-  animation: drop 1s;
+  animation: drop5 3.2s;
   animation-fill-mode: forwards;
-
 }
 
 .res {
-  animation: drop2 2s;
+  animation: drop4 2.8s;
   animation-fill-mode: forwards;
-
 }
 
 .git {
-  animation: drop3 3s;
+  animation: drop3 2.2s;
   animation-fill-mode: forwards;
-
 }
 
 .insta {
-  animation: drop4 4s;
+  animation: drop2 1.6s;
   animation-fill-mode: forwards;
-
 }
 
 .ct {
-  animation: drop5 5s;
+  animation: drop 1s;
   animation-fill-mode: forwards;
-
 }
+/* end nav bar */
 
 /* Bio */
 .bio {
   opacity: 0;
-  animation-delay: 10s;
-  animation: fadein 10s;
+  animation-delay: 6s;
+  animation: fadein 6s;
   animation-fill-mode: forwards;
 }
+
+/* end bio */
 
 /* Project  */
 .project-container {
   background-color: white;
 }
 
+.project-text {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-size: 40px;
+  transition: all 0.6s ease-in-out;
+}
 
 .projects-list {
   height: 90%;
@@ -106,14 +129,21 @@
   background-color: black;
 }
 
-
 .project:hover a {
   color: white;
   font-size: 1.75rem;
   transition: 0.5s ease-in-out;
 }
 
+/* end projects */
+
 /* Animation */
+@keyframes change-line-space {
+  0% { line-height: 0% }
+  50% { line-height: 0% }
+  100% { line-height: 75% }
+}
+
 @keyframes fadein {
   10% { opacity: 0 }
   20% { opacity: 0 }
@@ -231,9 +261,13 @@
   }
 }
 
+/* end animation */
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     .project {
         height: auto;
     }
 }
+
+/* end media queries */
