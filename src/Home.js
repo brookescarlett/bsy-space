@@ -47,15 +47,17 @@ class Home extends Component {
     changeText = (num) => {
         switch(num) {
             case 1:
-                return this.setState({ displayedText: "You Are Very Talented In Many Ways" })
+                return this.setState({ displayedText: "For Saying Hi" })
             case 2: 
-                return this.setState({ displayedText: "A Dream You Have Will Come True" })
-            case 3:
-                return this.setState({ displayedText: "Have A Nice Day" })
-            case 4:
-                return this.setState({ displayedText: "The Fortune You Seek Is In Another Cookie" })
-            case 5:
                 return this.setState({ displayedText: "Click To Enter" })
+            case 3:
+                return this.setState({ displayedText: "For Being Kind" })
+            case 4:
+                return this.setState({ displayedText: "Click To Enter" })
+            case 5:
+                return this.setState({ displayedText: "For Stopping By" })
+            case 6:
+                return this.setState({ displayedText: "Have A Nice Day" })
             default:
                 return null
 
@@ -69,12 +71,12 @@ class Home extends Component {
             <div>
                 {this.state.displayApp ? <App /> : 
                 <div className="fixed top-0 bottom-0 left-0 right-0" onClick={this.loadApp}>
-                    <div className="flex flex-column justify-center items-center home"  style={{marginTop: "20%"}}>
-                        <p className="yin" id="1" onMouseEnter={this.changeText.bind(null, 1)}>YINYANG</p>
-                        <p className="yin" id="2" onMouseEnter={this.changeText.bind(null, 2)}>YINYANG</p>
-                        <p className="yin" id="3" onMouseEnter={this.changeText.bind(null, 3)}>YINYANG</p>
-                        <p className="yin" id="4" onMouseEnter={this.changeText.bind(null, 4)}>YINYANG</p>
-                        <p className="yin" id="5" onMouseEnter={this.changeText.bind(null, 5)}>YINYANG</p>
+                        <div className="flex flex-column justify-center items-center home" style={{ marginTop: "20%" }} onMouseLeave={this.changeText.bind(null, 6)}>
+                        <p className="yin" id="1" onMouseEnter={this.changeText.bind(null, 1)}>THANKYOU</p>
+                        <p className="yin" id="2" onMouseEnter={this.changeText.bind(null, 2)}>THANKYOU</p>
+                        <p className="yin" id="3" onMouseEnter={this.changeText.bind(null, 3)}>THANKYOU</p>
+                        <p className="yin" id="4" onMouseEnter={this.changeText.bind(null, 4)}>THANKYOU</p>
+                        <p className="yin" id="5" onMouseEnter={this.changeText.bind(null, 5)}>THANKYOU</p>
                         <p style={{fontFamily: "Arial Black"}}>{this.state.displayedText}</p>
                     </div>
                     
