@@ -18,7 +18,11 @@
 .yang {
   color: black !important;
   line-height: 75%; 
+  -webkit-text-stroke: 1px white;
+
 }
+
+.yin:hover, .yang:hover { filter: invert(100%) }
 
 
 
@@ -46,13 +50,12 @@
 /* Navbar */
 .nav-links {
   color: black;
+  background-color: white;
   transition: all 0.2s ease-in-out;
 }
 
 .nav-links:hover {
-  font-size: 1.3rem;
-  transform: rotate(10deg);
-  transition: all 0.2s ease-in-out;
+ filter: invert(100%) 
 }
 
 .projs {
@@ -105,6 +108,10 @@
 
 .projects-list {
   height: 90%;
+}
+
+.project-title {
+  color: black;
 }
 
 .project { 
