@@ -39,8 +39,8 @@
   font-size: 40px;
   transition: all 0.6s ease-in-out;
   opacity: 0;
-  animation-delay: 6s;
-  animation: fadein 6s;
+  animation-delay: 4.5s;
+  animation: fadein 4.5s;
   animation-fill-mode: forwards;
 }
 
@@ -65,22 +65,22 @@
 }
 
 .projs {
-  animation: drop5 3.2s;
+  animation: drop5 2.6s;
   animation-fill-mode: forwards;
 }
 
 .res {
-  animation: drop4 2.8s;
+  animation: drop4 2.2s;
   animation-fill-mode: forwards;
 }
 
 .git {
-  animation: drop3 2.2s;
+  animation: drop3 1.8s;
   animation-fill-mode: forwards;
 }
 
 .insta {
-  animation: drop2 1.6s;
+  animation: drop2 1.4s;
   animation-fill-mode: forwards;
 }
 
@@ -93,8 +93,8 @@
 /* Bio */
 .bio {
   opacity: 0;
-  animation-delay: 6s;
-  animation: fadein 6s;
+  animation-delay: 4.5s;
+  animation: fadein 4.5s;
   animation-fill-mode: forwards;
 }
 
@@ -149,6 +149,17 @@
 }
 
 /* end projects */
+
+/* footer */
+.footer {
+  animation-name: moveRight;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+/* end footer */
 
 /* Animation */
 @keyframes change-line-space {
@@ -274,10 +285,24 @@
   }
 }
 
+@keyframes moveRight {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
 /* end animation */
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
+    .bio {
+      height: 55vh;
+      overflow: scroll;
+      margin: 0px 0px;
+    }
     .projects-list {
       height: 70vh;
     }
@@ -285,6 +310,7 @@
     .project {
         height: auto;
     }
+
 }
 
 /* end media queries */

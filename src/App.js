@@ -31,7 +31,7 @@ class App extends Component {
         <div><Nav renderProjects={this.renderProjects}/></div>
         <div>< Bio />{ this.state.projects ? <ProjectContainer toggleProject={this.toggleProject}/> : null }</div>
     </div>
-    <div className="fixed bottom-0 mb2">
+    <div className="footer fixed bottom-0 mb2">
         <span role="img" aria-label="wink">😏</span> Brooke Scarlett 
     </div>
   </div>
